@@ -10,14 +10,32 @@
 <body>
   <div class="content">
     <div class="card">
-      <div class="card__search">
-        <input type="text" placeholder="Movie Title" class="card__search--search">
-        <button class="card__search--btn">Search</button>
+      <div class="search">
+        <input type="text" placeholder="Movie Title" class="search__search">
+        <button class="search__btn">Search</button>
       </div>
-    </div>
-  </div>
+      <div class="card__container">
+        <div class="top">
+          <div class="top__left">
+            <h2 class="top__left--title">Title Here</h2>
+            <h5 class="top__left--genre">Action</h5>
+            <h3 class="top__left--rating">4.6<i class="fa fa-star" aria-hidden="true"></i></h3>
+          </div>
+          <img class="top__img" src="http://placekitten.com/250/100" alt="">
+        </div>
+        <div class="bottom">
+          <div class="bottom__info">
+            <h4 class="bottom__info--title">Summary</h4>
+            <p class="bottom__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="bottom__info">
+            <h4 class="bottom__info--title">Actors</h4>
+            <p class="bottom__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
 
-  <script src="/app.js" charset="utf-8"></script>
+      <script src="/app.js" charset="utf-8"></script>
 </body>
 
 </html>

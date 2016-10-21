@@ -1,43 +1,17 @@
 $c-background: #121212;
 $c-btn: #5374e6;
 $c-white: #fff;
+$c-cardbackground: #e3e3e3;
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import '_reset';
+@import 'card';
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40rem;
-}
-
-.card {
-  width: 50%;
-  min-width: 30rem;
-  height: 25rem;
-  margin: 0 auto;
-  background: pink;
-
-  &__search {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    &--search {
-      width: 90%;
-      padding-left: 0.3rem;
-      border: 0;
-      line-height: 1rem;
-    }
-
-    &--btn {
-      width: 10%;
-      border: 0;
-      background: $c-btn;
-      color: $c-white;
-    }
-  }
 }
