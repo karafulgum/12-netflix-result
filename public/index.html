@@ -8,32 +8,28 @@
 </head>
 
 <body>
-  <div class="content">
+  <div class="app">
     <div class="card">
-      <div class="search">
-        <input type="text" placeholder="Movie Title" class="search__search">
-        <button class="search__btn">Search</button>
+      <div class="app__header">
+        <input type="text" placeholder="Movie Title" class="search">
+        <button class="btn">Search</button>
       </div>
-      <div class="card__container">
+      <div class="results-list">
         <div class="top">
           <div class="top__left">
-            <h2 class="top__left--title">Title Here</h2>
-            <h5 class="top__left--genre">Action</h5>
-            <h3 class="top__left--rating">4.6<i class="fa fa-star" aria-hidden="true"></i></h3>
+          <h2 class="top__left--title">Title Here</h2>
+          <h5 class="top__left--genre">Action</h5>
+          <h3 class="top__left--rating">4.6<i class="fa fa-star" aria-hidden="true"></i></h3>
           </div>
-          <div class="top__right">
-          <img class="top__img" src="http://placekitten.com/250/200" alt="">
+          <div class="results-list__item">
+            <div class="result-frame"><img src="http://placekitten.com/250/200" alt="" class="result-frame__pic"></div>
+          </div>
         </div>
-      </div>
         <div class="bottom">
-          <div class="bottom__info">
-            <h4 class="bottom__info--title">Summary</h4>
-            <p class="bottom__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="bottom__info">
-            <h4 class="bottom__info--title">Actors</h4>
-            <p class="bottom__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
+          <div class="bottom__title">Summary</div>
+          <p class="bottom__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="bottom__title">Actors</div>
+          <p class="bottom__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
 

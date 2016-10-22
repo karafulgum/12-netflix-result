@@ -1,7 +1,6 @@
 .card {
   width: 50%;
   min-width: 30rem;
-  margin: 0 auto;
   background: $c-cardbackground;
 
   &__container {
@@ -10,24 +9,22 @@
 }
 
 .search {
-  display: flex;
-  width: 100%;
-  height: 1.5rem;
+  width: 90%;
+  height: inherit;
+  padding-left: 0.3rem;
+  border: 0;
+}
 
-  &__search {
-    width: 90%;
-    height: inherit;
-    padding-left: 0.3rem;
-    border: 0;
-  }
+.btn {
+  width: 10%;
+  height: inherit;
+  border: 0;
+  background: $c-btn;
+  color: $c-white;
+}
 
-  &__btn {
-    width: 10%;
-    height: inherit;
-    border: 0;
-    background: $c-btn;
-    color: $c-white;
-  }
+.results-list {
+  padding: 1rem;
 }
 
 .top {
@@ -58,15 +55,15 @@
 }
 
 .bottom {
-  margin-top: 3rem;
+  margin-top: 2rem;
 
-  &__info {
-
-    &--title {
-      margin: 0;
-    }
-    &--text {
-      margin: 0.5rem 0;
-    }
+  &__title {
+    margin: 0;
+    font-weight: bold;
   }
+
+  &__text {
+    margin: 0.5rem 0;
+  }
+
 }
