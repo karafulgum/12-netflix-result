@@ -1,32 +1,28 @@
 .search-form {
   display: flex;
 
-  &__btn,
-  &__input {
-    padding: 0.2rem;
-  }
-
   &__input {
     flex-grow: 1;
+    padding: 0.3rem;
+    border: 0;
+  }
+
+  &__btn {
+    padding: 0.3rem;
+    border: 0;
+    background: $c-btn;
+    color: $c-white;
   }
 }
 
-// .search {
-//   width: 90%;
-//   min-width: 20rem;
-//   height: inherit;
-//   padding-left: 0.3rem;
-//   border: 0;
-// }
-//
-// .btn {
-//   width: 10%;
-//   min-width: 3rem;
-//   height: inherit;
-//   border: 0;
-//   background: $c-btn;
-//   color: $c-white;
-// }
+.result-frame {
+  height: 100%;
+
+  &__pic {
+    display: block;
+    height: 10rem;
+  }
+}
 
 .results-list {
   padding: 1rem;
