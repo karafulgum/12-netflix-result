@@ -51,6 +51,12 @@
   }
 }
 
+.rating {
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
 .fa-star {
   margin-left: 0.2rem;
 }
@@ -64,7 +70,7 @@
   }
 
   &__text {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
   }
 
 }

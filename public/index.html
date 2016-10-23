@@ -14,17 +14,21 @@
         <div class="app__header">
           <div class="search-form">
             <input type="text" placeholder="Movie Title" class="search-form__input">
+            <!-- <input type="submit" placeholder="Search" class="search-form__btn"> -->
             <button class="search-form__btn">Search</button>
           </div>
         </div>
 
 
         <div class="results-list">
-          <!-- <div class="top">
+          <div class="top">
             <div class="top__left">
-              <h2 class="top__left--title">Title Here</h2>
-              <h5 class="top__left--genre">Action</h5>
-              <h3 class="top__left--rating">4.6<i class="fa fa-star" aria-hidden="true"></i></h3>
+              <h2 class="top__left--title"></h2>
+              <h5 class="top__left--genre"></h5>
+              <div class="rating">
+                <h3 class="top__left--rating"></h3>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
             </div>
             <div class="results-list__item">
               <div class="result-frame"><img src="http://placekitten.com/250/200" alt="" class="result-frame__pic"></div>
@@ -32,16 +36,21 @@
           </div>
           <div class="bottom">
             <div class="bottom__title">Summary</div>
-            <p class="bottom__text bottom__text--summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="bottom__text bottom__text--summary"></p>
             <div class="bottom__title">Actors</div>
-            <p class="bottom__text bottom__text--actors">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div> -->
+            <p class="bottom__text bottom__text--actors"></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="/app.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8">
+  const app = document.querySelector('.app');
+  const start = require('index');
+
+  start(app);
+  </script>
 </body>
 
 </html>
