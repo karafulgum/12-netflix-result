@@ -19,7 +19,7 @@ fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
 // searchBtn.addEventListener('click', searchBtn);
 
 searchInput.addEventListener('submit', searchForm);
-fetch('http://netflixroulette.net/api/api.php?title=titanic');
+// fetch('http://netflixroulette.net/api/api.php?title=titanic');
 // .then((searchResult) => searchResult.json())
 // .then((data) => {
 //   const movie = data;
