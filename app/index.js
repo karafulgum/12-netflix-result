@@ -6,19 +6,29 @@ const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search-form__input');
 const searchResult = document.querySelector('.results-list');
 const searchBtn = document.querySelector('.serach-form__btn');
+
 const searchView = new NetflixResultView(searchResult, {});
 
-fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
+function startSearch(term) {
+  fetch(`http://netflixroulette.net/api/api.php?title=${term}`)
 .then((searchResult) => searchResult.json())
 .then((data) => {
   const movie = data;
   searchView.model = movie;
   searchView.render();
 });
+}
+searchForm.addEventListener('submit', (ev) => {
+  ev.preventDefault();
+
+  startSearch(searchInput.value);
+});
+
+startSearch('Scrubs');
 
 // searchBtn.addEventListener('click', searchBtn);
 
-searchInput.addEventListener('submit', searchForm);
+// searchInput.addEventListener('submit', searchForm);
 // fetch('http://netflixroulette.net/api/api.php?title=titanic');
 // .then((searchResult) => searchResult.json())
 // .then((data) => {
