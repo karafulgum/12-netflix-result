@@ -15,3 +15,12 @@
   transform: translate(-50%, -50%);
   background: $c-cardbackground;
 }
+
+@media (max-width: 420px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+}
