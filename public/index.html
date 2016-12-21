@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>12-Netflix-Result</title>
+  <title>Netflix Result</title>
   <link rel="stylesheet" href="/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <script src="/app.js" charset="utf-8"></script>
+  <div class="container">
+    <div class="section">
+      <div class="app">
+          <form class="search-form">
+            <input type="text" placeholder="Movie Title" class="search-form__input">
+            <button class="search-form__btn">Search</button>
+          </form>
+
+
+
+        <div class="results-list">
+          <div class="top">
+            <div class="top__left">
+              <h2 class="top__left--title"></h2>
+              <h5 class="top__left--genre"></h5>
+              <div class="rating">
+                <h3 class="top__left--rating"></h3>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="results-list__item">
+              <div class="result-frame"><img src="" alt="" class="result-frame__pic"></div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="bottom__title">Summary</div>
+            <p class="bottom__text bottom__text--summary"></p>
+            <div class="bottom__title">Actors</div>
+            <p class="bottom__text bottom__text--actors"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js" charset="utf-8">
+  // const app = document.querySelector('.app');
+  // const start = require('index');
+
+  start(app);
+  </script>
 </body>
+
 </html>
